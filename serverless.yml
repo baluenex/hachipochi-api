@@ -44,8 +44,8 @@ custom:
 
 functions:
   getGenre:
-    handler: get_genre.lambda_handler
-    name: ${self:provider.stage}_get_genre
+    handler: index_genre.scan
+    name: ${self:provider.stage}_scan_genre
     events:
       - http:
           path: /genre
